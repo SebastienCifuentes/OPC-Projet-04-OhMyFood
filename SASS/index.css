@@ -48,6 +48,9 @@ h1 {
   align-items: center;
   background-color: #eaeaea;
 }
+.location-explication-loc h2 {
+  font-size: 16px;
+}
 .location-explication-loc-icon {
   display: flex;
   align-items: center;
@@ -55,11 +58,6 @@ h1 {
   width: 12px;
   height: 16px;
 }
-
-.location-explication h2 {
-  font-size: 16px;
-}
-
 .location-explication-expl {
   background-color: #f6f6f6;
   display: flex;
@@ -67,33 +65,19 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-
 .location-explication-expl h2 {
   font-size: 24px;
   font-weight: 700;
   margin: 50px 50px 0px 50px;
   text-align: center;
 }
-
 .location-explication-expl p {
   font-size: 18px;
   margin: 30px 30px;
   text-align: center;
 }
 
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-  padding: 50px 20px 70px 20px;
-  gap: 25px;
-}
-
-.fonctionnement h3 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.fonctionnement-btn {
+.location-btn {
   width: 220px;
   height: 50px;
   font-size: 16px;
@@ -105,19 +89,27 @@ h1 {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px 70px 20px;
+  gap: 25px;
+}
+.fonctionnement h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
 .fonctionnement-boxes {
   display: flex;
   flex-direction: column;
   gap: 25px;
   align-items: center;
 }
-
 .fonctionnement-boxes-box {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 .fonctionnement-boxes-box-num {
   font-size: 17px;
   border: 2px solid #9356DC;
@@ -131,6 +123,17 @@ h1 {
   justify-content: center;
   position: relative;
   left: 15px;
+}
+.fonctionnement-boxes-box-description {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.fonctionnement-boxes-box-description h2 {
+  font-size: 16px;
 }
 
 .fa-mobile-screen-button {
@@ -148,42 +151,25 @@ h1 {
   font-size: 20px;
 }
 
-.fonctionnement-boxes-box-description {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-}
-
-.fonctionnement-boxes-box-description h2 {
-  font-size: 16px;
-}
-
 .restaurants {
   padding: 55px 20px 65px 20px;
   background-color: #f6f6f6;
 }
-
 .restaurants h3 {
   font-size: 24px;
   font-weight: 700;
 }
-
 .restaurants-cards {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 .restaurants-cards-duo {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 .restaurants-cards img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -191,12 +177,10 @@ h1 {
   border-radius: 15px 15px 0 0;
   height: 231px;
 }
-
 .restaurants-cards-unique {
   text-decoration: none;
   color: black;
 }
-
 .restaurants-cards-unique-text {
   display: flex;
   flex-direction: column;
@@ -206,7 +190,6 @@ h1 {
   background-color: #FFF;
   border-radius: 0 0 15px 15px;
 }
-
 .restaurants-cards-unique-text h2 {
   font-size: 18px;
 }
@@ -233,7 +216,6 @@ h1 {
   gap: 10px;
   padding: 0;
 }
-
 .footer-liste-element i {
   width: 25px;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=index.css.map */
