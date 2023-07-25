@@ -8,9 +8,10 @@ body {
 h1 {
   font-family: "Shrikhand"; }
 
-/*$main-color: #9356DC;
-  $second-color: #FF79DA;
-  $third-color: #99E2D0;*/
+$main-color: #9356DC;
+$second-color: #FF79DA;
+$third-color: #99E2D0;
+
 /********** Header **********/
 .logo-header {
   display: flex;
@@ -117,7 +118,7 @@ h1 {
   height: 50px;
   font-size: 16px;
   color: white;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient($second-color, $main-color);
   border: none;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
