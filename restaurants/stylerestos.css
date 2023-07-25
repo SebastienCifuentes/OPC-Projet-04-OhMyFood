@@ -1,0 +1,161 @@
+/********** General **********/
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+h1 {
+  font-family: "Shrikhand";
+}
+
+/*$main-color: #9356DC;
+  $second-color: #FF79DA;
+  $third-color: #99E2D0;*/
+/********** Header **********/
+.logo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: white;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+.logo-header-img {
+  height: 36px;
+  width: 200px;
+}
+
+.logo-header-back i {
+  color: black;
+  font-size: 30px;
+  position: relative;
+  right: 50px;
+}
+
+/********** Main **********/
+.menu {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-img img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu-choix {
+  background-color: #F6F6F6;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  top: -60px;
+}
+
+.menu-choix-titre {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  padding: 30px 15px 40px 15px;
+}
+
+.menu-choix-titre i {
+  font-size: 28px;
+}
+
+.menu-choix-titre h1 {
+  font-size: 28px;
+}
+
+.menu-choix-main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.menu-choix-main-bloc {
+  padding: 0 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-choix-main-bloc-title h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.menu-choix-main-bloc-card {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #FFF;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.menu-choix-main-bloc-card-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-choix-main-bloc-card-text p {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.menu-choix-main-bloc-card-text h3 {
+  font-size: 16px;
+}
+
+.menu-choix-main-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-choix-main-btn-cmd {
+  width: 186px;
+  height: 50px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+/********** Footer **********/
+.footer {
+  padding: 25px;
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #FFF;
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer-liste {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+.footer-liste-element i {
+  width: 25px;
+}/*# sourceMappingURL=stylerestos.css.map */
