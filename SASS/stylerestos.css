@@ -20,12 +20,10 @@ h1 {
   background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
 }
-
 .logo-header-img {
   height: 36px;
   width: 200px;
 }
-
 .logo-header-back i {
   color: black;
   font-size: 30px;
@@ -39,7 +37,6 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-
 .menu-img img {
   width: 100%;
   height: 275px;
@@ -53,18 +50,15 @@ h1 {
   position: relative;
   top: -60px;
 }
-
 .menu-choix-titre {
   display: flex;
   gap: 35px;
   align-items: center;
   padding: 30px 15px 40px 15px;
 }
-
 .menu-choix-titre i {
   font-size: 28px;
 }
-
 .menu-choix-titre h1 {
   font-size: 28px;
 }
@@ -81,12 +75,10 @@ h1 {
   flex-direction: column;
   gap: 15px;
 }
-
 .menu-choix-main-bloc-title h3 {
   font-size: 16px;
   font-weight: 300;
 }
-
 .menu-choix-main-bloc-card {
   padding: 15px;
   display: flex;
@@ -96,17 +88,14 @@ h1 {
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 }
-
 .menu-choix-main-bloc-card-text {
   display: flex;
   justify-content: space-between;
 }
-
 .menu-choix-main-bloc-card-text p {
   font-weight: 300;
   font-size: 15px;
 }
-
 .menu-choix-main-bloc-card-text h3 {
   font-size: 16px;
 }
@@ -116,7 +105,6 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-
 .menu-choix-main-btn-cmd {
   width: 186px;
   height: 50px;
@@ -137,12 +125,10 @@ h1 {
   gap: 15px;
   color: #FFF;
 }
-
 .footer-logo {
   font-size: 18px;
   font-weight: 400;
 }
-
 .footer-liste {
   list-style-type: none;
   font-weight: 500;
@@ -152,7 +138,6 @@ h1 {
   gap: 10px;
   padding: 0;
 }
-
 .footer-liste-element i {
   width: 25px;
 }/*# sourceMappingURL=stylerestos.css.map */
