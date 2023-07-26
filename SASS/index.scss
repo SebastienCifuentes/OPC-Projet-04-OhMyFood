@@ -199,6 +199,23 @@ $third-color: #99E2D0;
     &-unique {
       text-decoration: none;
       color: black;
+      position: relative;
+
+      &-new  {
+        background-color: $third-color;
+        position: absolute;
+        width: 80px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #008766;
+        right: 15px;
+        top: 15px;
+      }
 
       &-text {
         display: flex;
