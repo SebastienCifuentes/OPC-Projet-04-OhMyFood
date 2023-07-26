@@ -2,6 +2,7 @@
 * {
     margin: 0;
     max-width: 1440px;
+    box-sizing: border-box;
   }
   
 body {
@@ -15,6 +16,9 @@ h1 {
 $main-color: #9356DC;
 $second-color: #FF79DA;
 $third-color: #99E2D0;
+
+$tablet: 768px;
+$desktop: 1080px;
 
 /********** Header **********/
 .logo-header {
@@ -79,7 +83,7 @@ $third-color: #99E2D0;
       font-weight: 700;
       margin: 50px 50px 0px 50px;
       text-align: center;
-      @media (min-width: 1024px) {
+      @media (min-width: $desktop) {
         font-size:  40px;        
       }
     }
@@ -119,7 +123,13 @@ $third-color: #99E2D0;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    @media (min-width: 768px) {
+    @media (max-width: 1079px) and (min-width: $tablet) {
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: row;
+      height: 200px;
+    }
+    @media (min-width: $desktop) {
       flex-direction: row;
     }
     
@@ -127,6 +137,7 @@ $third-color: #99E2D0;
       display: flex;
       flex-direction: row;
       align-items: center;
+      position: relative;
       
       &-num {
         font-size: 15px;
@@ -140,12 +151,13 @@ $third-color: #99E2D0;
         align-items: center;
         justify-content: center;
         position: absolute;
-        left: 17px;
+        left: -10px;
       }
 
       &-description {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         width: 100%;
         gap: 25px;
         padding: 30px;
@@ -194,7 +206,7 @@ $third-color: #99E2D0;
       display: flex;
       flex-direction: column;
       gap: 20px;
-      @media (min-width: 768px) {
+      @media (min-width: $tablet) {
         flex-direction: row;
       }
     }
@@ -264,7 +276,7 @@ $third-color: #99E2D0;
   flex-direction: column;
   gap: 15px;
   color: #FFF;
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     flex-direction: row-reverse;
     gap: 16px;
   }
@@ -287,7 +299,7 @@ $third-color: #99E2D0;
       width: 25px;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet) {
       flex-direction: row;
     }
   }

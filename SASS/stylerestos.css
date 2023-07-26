@@ -1,6 +1,7 @@
 /********** General **********/
 * {
   margin: 0;
+  max-width: 1440px;
 }
 
 body {
@@ -49,6 +50,7 @@ h1 {
   border-radius: 30px 30px 0 0;
   position: relative;
   top: -60px;
+  max-width: 1055px;
 }
 .menu-choix-titre {
   display: flex;
@@ -134,6 +136,12 @@ h1 {
   gap: 15px;
   color: #FFF;
 }
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    gap: 16px;
+  }
+}
 .footer-logo {
   font-size: 18px;
   font-weight: 400;
@@ -149,4 +157,9 @@ h1 {
 }
 .footer-liste-element i {
   width: 25px;
+}
+@media (min-width: 768px) {
+  .footer-liste {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=stylerestos.css.map */
