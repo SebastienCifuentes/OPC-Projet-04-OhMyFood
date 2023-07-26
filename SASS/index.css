@@ -1,6 +1,7 @@
 /********** General **********/
 * {
   margin: 0;
+  max-width: 1440px;
 }
 
 body {
@@ -71,6 +72,11 @@ h1 {
   margin: 50px 50px 0px 50px;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  .location-explication-expl h2 {
+    font-size: 40px;
+  }
+}
 .location-explication-expl p {
   font-size: 18px;
   margin: 30px 30px;
@@ -103,6 +109,11 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 25px;
+}
+@media (min-width: 768px) {
+  .fonctionnement-boxes {
+    flex-direction: row;
+  }
 }
 .fonctionnement-boxes-box {
   display: flex;
@@ -167,6 +178,11 @@ h1 {
   flex-direction: column;
   gap: 20px;
 }
+@media (min-width: 768px) {
+  .restaurants-cards-duo {
+    flex-direction: row;
+  }
+}
 .restaurants-cards img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -223,6 +239,12 @@ h1 {
   gap: 15px;
   color: #FFF;
 }
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row-reverse;
+    gap: 16px;
+  }
+}
 .footer-logo {
   font-size: 18px;
   font-weight: 400;
@@ -238,4 +260,9 @@ h1 {
 }
 .footer-liste-element i {
   width: 25px;
+}
+@media (min-width: 768px) {
+  .footer-liste {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=index.css.map */
