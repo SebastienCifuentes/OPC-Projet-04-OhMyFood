@@ -75,9 +75,18 @@ h1 {
   flex-direction: column;
   gap: 15px;
 }
+.menu-choix-main-bloc-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .menu-choix-main-bloc-title h3 {
   font-size: 16px;
   font-weight: 300;
+}
+.menu-choix-main-bloc-title-underline {
+  border-bottom: solid 3px #99E2D0;
+  width: 40px;
 }
 .menu-choix-main-bloc-card {
   padding: 15px;
