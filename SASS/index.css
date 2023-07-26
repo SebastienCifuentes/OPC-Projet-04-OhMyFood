@@ -135,18 +135,15 @@ h1 {
 .fonctionnement-boxes-box-description h2 {
   font-size: 16px;
 }
-
-.fa-mobile-screen-button {
+.fonctionnement-boxes-box-description .fa-mobile-screen-button {
   color: #7e7e7e;
   font-size: 20px;
 }
-
-.fa-list-ul {
+.fonctionnement-boxes-box-description .fa-list-ul {
   color: #7e7e7e;
   font-size: 20px;
 }
-
-.fa-store {
+.fonctionnement-boxes-box-description .fa-store {
   color: #7e7e7e;
   font-size: 20px;
 }
@@ -205,9 +202,16 @@ h1 {
   gap: 5px;
   background-color: #FFF;
   border-radius: 0 0 15px 15px;
+  position: relative;
 }
 .restaurants-cards-unique-text h2 {
   font-size: 18px;
+}
+.restaurants-cards-unique-text .fa-heart {
+  font-size: 22px;
+  position: absolute;
+  right: 25px;
+  top: 25px;
 }
 
 /********** Footer **********/

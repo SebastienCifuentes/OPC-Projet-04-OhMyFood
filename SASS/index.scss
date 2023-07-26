@@ -148,24 +148,24 @@ $third-color: #99E2D0;
         & h2 {
           font-size: 16px;
         }
+
+        .fa-mobile-screen-button {
+          color: #7e7e7e;
+          font-size: 20px;
+        }
+        
+        .fa-list-ul {
+          color: #7e7e7e;
+          font-size: 20px;
+        }
+        
+        .fa-store {
+          color: #7e7e7e;
+          font-size: 20px;
+        }
       }
     }
   }
-}
-
-.fa-mobile-screen-button {
-  color: #7e7e7e;
-  font-size: 20px;
-}
-
-.fa-list-ul {
-  color: #7e7e7e;
-  font-size: 20px;
-}
-
-.fa-store {
-  color: #7e7e7e;
-  font-size: 20px;
 }
 
 .restaurants {
@@ -225,14 +225,24 @@ $third-color: #99E2D0;
         gap: 5px;
         background-color: #FFF;
         border-radius: 0 0 15px 15px;
+        position: relative;
 
         & h2 {
           font-size: 18px;
+        }
+
+        .fa-heart {
+          font-size: 22px;
+          position: absolute;
+          right: 25px;
+          top: 25px;
         }
       }
     }
   }
 }
+
+
 
 
 /********** Footer **********/
