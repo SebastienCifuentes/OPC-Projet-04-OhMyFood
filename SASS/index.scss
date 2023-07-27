@@ -118,6 +118,9 @@ h1 {
   @media (min-width: $tablet) {
     padding: 50px 20px;
   }
+  @media (min-width: $desktop) {
+    align-items: center;
+  }
 
   & h3 {
     font-size: 24px;

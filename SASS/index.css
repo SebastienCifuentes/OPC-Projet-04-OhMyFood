@@ -116,6 +116,11 @@ h1 {
     padding: 50px 20px;
   }
 }
+@media (min-width: 1080px) {
+  .fonctionnement {
+    align-items: center;
+  }
+}
 .fonctionnement h3 {
   font-size: 24px;
   font-weight: 700;
