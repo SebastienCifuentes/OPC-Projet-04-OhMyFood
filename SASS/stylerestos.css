@@ -68,7 +68,7 @@ h1 {
 .menu-choix-main {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 100px;
 }
 
 .menu-choix-main-bloc {
