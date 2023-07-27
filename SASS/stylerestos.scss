@@ -1,7 +1,10 @@
+@import "variables";
+
 /********** General **********/
 * {
   margin: 0;
   max-width: 1440px;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,13 +13,6 @@ body {
 
 h1 {
   font-family: "Shrikhand"; }
-
-$main-color: #9356DC;
-$second-color: #FF79DA;
-$third-color: #99E2D0;
-
-$tablet: 768px;
-$desktop: 1080px;
 
 /********** Header **********/
 .logo-header {
