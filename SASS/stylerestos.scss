@@ -153,17 +153,24 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  color: #FFF; 
+  color: #FFF;
   @media (min-width: $tablet) {
     flex-direction: row-reverse;
     gap: 16px;
+    height: 54px;
+    padding: 30px 25px;
+    justify-content: flex-start;
+    align-items: flex-end;
   }
 
   &-logo {
     font-size: 18px;
     font-weight: 400;
+    @media (min-width: $desktop) {
+      width: 139px;
+    }
   }
-  
+
   &-liste {
     list-style-type: none;
     font-weight: 500;
@@ -173,7 +180,19 @@ h1 {
     gap: 10px;
     padding: 0;
 
-    &-element i {
+    &-element-text {
+      @media (min-width: $desktop) {
+        width: 130px;
+      }
+    }
+
+    &-element-icone {
+      @media (min-width: $desktop) {
+        width: 188px;
+      }
+    }
+
+    &-element-icone i {
       width: 25px;
     }
 
