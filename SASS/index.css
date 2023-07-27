@@ -121,6 +121,11 @@ h1 {
     align-items: center;
   }
 }
+.fonctionnement-boite {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 .fonctionnement h3 {
   font-size: 24px;
   font-weight: 700;
