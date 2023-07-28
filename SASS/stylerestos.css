@@ -138,12 +138,11 @@ h1 {
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  transition: box-shadow 400ms;
-  transition: opacity 400ms;
+  transition: all 500ms ease-in-out;
 }
 .menu-choix-main-btn-cmd:hover {
   opacity: 0.7;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.7);
 }
 @media (min-width: 768px) {
   .menu-choix-main-btn-cmd {
