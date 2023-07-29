@@ -68,7 +68,7 @@ h1 {
   align-items: center;
   padding: 30px 15px 40px 15px;
 }
-.menu-choix-titre i {
+.menu-choix-titre .fa-heart {
   font-size: 28px;
 }
 .menu-choix-titre h1 {
