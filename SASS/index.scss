@@ -217,100 +217,107 @@ h1 {
 }
 
 .restaurants {
+  display: flex;
+  flex-direction: column;
   padding: 55px 20px 65px 20px;
   background-color: #f6f6f6;
   @media (min-width: $tablet) {
     padding: 30px 20px;
   }
 
-  & h3 {
-    font-size: 24px;
-    font-weight: 700;
-  }
-
-  &-cards {
-    padding-top: 20px;
+  &-container {
     display: flex;
     flex-direction: column;
-    gap: 20px ;
-    max-width: $desktop;
 
-    &-duo {
+    & h3 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    &-cards {
+      padding-top: 20px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
-      @media (min-width: $tablet) {
-        flex-direction: row;
-        justify-content: space-between;
-      }
-    }
+      gap: 20px ;
+      max-width: $desktop;
 
-    & img {
-      object-fit: cover;
-      width: 100%;
-      border-radius: 15px 15px 0 0;
-      height: 100%;
-    }
-
-    &-unique {
-      text-decoration: none;
-      color: black;
-      position: relative;
-      @media (min-width: $tablet) {
-        width: 50%;
-        max-width: 490px;
-      }
-
-      &-new  {
-        background-color: $third-color;
-        position: absolute;
-        width: 80px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 2px;
-        font-size: 14px;
-        font-weight: 500;
-        color: #008766;
-        right: 15px;
-        top: 15px;
-      }
-
-      &-img {
-        height: 231px;
-      }
-
-      &-text {
+      &-duo {
         display: flex;
         flex-direction: column;
-        padding: 15px 0 15px 15px;
+        gap: 20px;
+        @media (min-width: $tablet) {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+
+      & img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        height: 100%;
+      }
+
+      &-unique {
         text-decoration: none;
-        gap: 5px;
-        background-color: #FFF;
-        border-radius: 0 0 15px 15px;
+        color: black;
         position: relative;
-
-        & h2 {
-          font-size: 18px;
+        @media (min-width: $tablet) {
+          width: 50%;
+          max-width: 490px;
         }
 
-        .fa-heart {
-          font-size: 22px;
+        &-new  {
+          background-color: $third-color;
           position: absolute;
-          right: 25px;
-          top: 25px;
+          width: 80px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 2px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #008766;
+          right: 15px;
+          top: 15px;
         }
 
-        .fa-solid {
-          color: transparent;
-          background-image: linear-gradient($main-color, $second-color);
-          background-clip: text;
-          opacity: 0;
-          transition: all 500ms ease-in-out;
-          &:hover {
-            opacity: 1;
-            transform: scale(1.1);
+        &-img {
+          height: 231px;
+        }
+
+        &-text {
+          display: flex;
+          flex-direction: column;
+          padding: 15px 0 15px 15px;
+          text-decoration: none;
+          gap: 5px;
+          background-color: #FFF;
+          border-radius: 0 0 15px 15px;
+          position: relative;
+
+          & h2 {
+            font-size: 18px;
+          }
+
+          .fa-heart {
+            font-size: 22px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+          }
+
+          .fa-solid {
+            color: transparent;
+            background-image: linear-gradient($main-color, $second-color);
+            background-clip: text;
+            opacity: 0;
+            transition: all 500ms ease-in-out;
+            &:hover {
+              opacity: 1;
+              transform: scale(1.1);
+            }
           }
         }
       }
