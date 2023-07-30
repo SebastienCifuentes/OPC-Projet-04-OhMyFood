@@ -249,7 +249,7 @@ h1 {
      object-fit: cover;
   width: 100%;
   border-radius: 15px 15px 0 0;
-  height: 231px;
+  height: 100%;
 }
 .restaurants-cards-unique {
   text-decoration: none;
@@ -276,6 +276,9 @@ h1 {
   color: #008766;
   right: 15px;
   top: 15px;
+}
+.restaurants-cards-unique-img {
+  height: 231px;
 }
 .restaurants-cards-unique-text {
   display: flex;

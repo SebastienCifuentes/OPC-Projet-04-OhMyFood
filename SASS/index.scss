@@ -249,7 +249,7 @@ h1 {
       object-fit: cover;
       width: 100%;
       border-radius: 15px 15px 0 0;
-      height: 231px;
+      height: 100%;
     }
 
     &-unique {
@@ -275,6 +275,10 @@ h1 {
         color: #008766;
         right: 15px;
         top: 15px;
+      }
+
+      &-img {
+        height: 231px;
       }
 
       &-text {
