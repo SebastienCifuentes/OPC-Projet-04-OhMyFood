@@ -29,6 +29,7 @@ width: 100%;
   height: 70px;
   background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
 
   &-img {
     height: 36px;
@@ -38,8 +39,9 @@ width: 100%;
   &-back i {
     color: black;
     font-size: 20px;
-    position: relative;
-    right: 50px;
+    position: absolute;
+    left: 20px;
+    top: 25px;
   }
 }
 
@@ -69,14 +71,26 @@ width: 100%;
 
   &-titre {
     display: flex;
-    gap: 35px;
+    gap: 40px;
     align-items: center;
     padding: 30px 15px 40px 15px;
+    position: relative;
+
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     .fa-heart {
       font-size: 28px;
       position: absolute;
-      right: 10px;
     }
 
     .fa-solid {
