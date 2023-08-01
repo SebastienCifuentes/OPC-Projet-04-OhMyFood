@@ -153,10 +153,10 @@ h1 {
   height: 50px;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  gap: 17px;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  gap: 17px;
   background-color: #eaeaea;
 }
 .location-explication-loc h2 {
@@ -164,17 +164,17 @@ h1 {
 }
 .location-explication-loc-icon {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 12px;
   height: 16px;
 }
 .location-explication-expl {
   background-color: #f6f6f6;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
 }
 .location-explication-expl h2 {
@@ -197,18 +197,18 @@ h1 {
 
 .location-btn {
   width: 220px;
+  margin-bottom: 60px;
   height: 50px;
   font-size: 16px;
-  margin-bottom: 60px;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border: none;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
   transition: all 500ms ease-in-out;
 }
 .location-btn:hover {
+  cursor: pointer;
   opacity: 0.7;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.7);
 }
@@ -281,8 +281,8 @@ h1 {
   height: 24px;
   width: 24px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   position: absolute;
   left: -10px;
 }
@@ -378,8 +378,8 @@ h1 {
   width: 80px;
   height: 30px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border-radius: 2px;
   font-size: 14px;
   font-weight: 500;

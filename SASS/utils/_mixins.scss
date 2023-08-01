@@ -1,0 +1,40 @@
+@mixin display_flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btn {
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient($second-color, $main-color);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: all 500ms ease-in-out;
+}
+
+@mixin btn_hover {
+    cursor: pointer;
+    opacity: 0.7;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.7);
+}
+
+@mixin fa_solid {
+    color: transparent;
+    background-image: linear-gradient($main-color, $second-color);
+    background-clip: text;
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+}
+
+@mixin fa_solid_hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@mixin fa_icon {
+    color: #7e7e7e;
+    font-size: 20px;
+}

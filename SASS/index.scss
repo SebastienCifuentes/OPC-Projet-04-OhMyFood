@@ -1,5 +1,6 @@
 @import "base/base";
 @import "utils/variables";
+@import "utils/mixins";
 @import "layout/loader";
 @import "layout/headerindex";
 @import "layout/footer";
@@ -13,19 +14,15 @@
 }
 
 .location-explication {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display_flex_center;
   flex-direction: column;
 
   &-loc {
     height: 50px;
     width: 100%;
-    display: flex;
+    @include display_flex_center;
     flex-direction: row;
     gap: 17px;
-    justify-content: center;
-    align-items: center;
     background-color: #eaeaea;
 
     & h2 {
@@ -33,9 +30,7 @@
       }
 
     &-icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include display_flex_center;
       width: 12px;
       height: 16px;
     }
@@ -43,10 +38,8 @@
 
   &-expl {
     background-color: #f6f6f6;
-    display: flex;
+    @include display_flex_center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 
     & h2 {
@@ -70,20 +63,13 @@
 
 .location-btn {
   width: 220px;
-  height: 50px;
-  font-size: 16px;
   margin-bottom: 60px;
-  color: white;
-  background: linear-gradient($second-color, $main-color);
-  border: none;
-  border-radius: 25px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: all 500ms ease-in-out;
+  @include btn;
+  
   &:hover {
-    opacity: 0.7;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.7);
+    @include btn_hover;
   }
+  
   @media (min-width: $tablet) {
     margin-bottom: 30px;
   }
@@ -143,9 +129,7 @@
         border-radius: 50%;
         height: 24px;
         width: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include display_flex_center;
         position: absolute;
         left: -10px;
       }
@@ -168,18 +152,15 @@
         }
 
         .fa-mobile-screen-button {
-          color: #7e7e7e;
-          font-size: 20px;
+          @include fa_icon;
         }
         
         .fa-list-ul {
-          color: #7e7e7e;
-          font-size: 20px;
+          @include fa_icon;
         }
         
         .fa-store {
-          color: #7e7e7e;
-          font-size: 20px;
+          @include fa_icon;
         }
       }
     }
@@ -242,9 +223,7 @@
           position: absolute;
           width: 80px;
           height: 30px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include display_flex_center;
           border-radius: 2px;
           font-size: 14px;
           font-weight: 500;
@@ -279,14 +258,10 @@
           }
 
           .fa-solid {
-            color: transparent;
-            background-image: linear-gradient($main-color, $second-color);
-            background-clip: text;
-            opacity: 0;
-            transition: all 500ms ease-in-out;
+            @include fa_solid;
+
             &:hover {
-              opacity: 1;
-              transform: scale(1.1);
+              @include fa_solid_hover;
             }
           }
         }
