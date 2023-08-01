@@ -70,9 +70,12 @@ h1 {
 
 /********** Main **********/
 .menu {
-  background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.menu-img {
+  width: 100%;
 }
 .menu-img img {
   width: 100%;

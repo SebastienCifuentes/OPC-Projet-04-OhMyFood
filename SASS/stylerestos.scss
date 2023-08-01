@@ -74,9 +74,13 @@ width: 100%;
 
 /********** Main **********/
 .menu {
-  background-color: #F6F6F6;
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  &-img {
+    width: 100%;
+  }
 
   &-img img {
     width: 100%;
