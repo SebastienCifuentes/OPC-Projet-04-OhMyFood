@@ -1,76 +1,10 @@
-@import "variables";
+@import "base/base";
+@import "utils/variables";
+@import "layout/loader-page-resto";
+@import "layout/headerresto";
+@import "layout/footer";
 
-/********** General **********/
-* {
-  margin: 0;
-}
 
-body {
-font-family: "Roboto";
-display: flex;
-justify-content: center;
-}
-
-h1 {
-font-family: "Shrikhand";
-}
-
-.main-body {
-max-width: 1440px;
-width: 100%;
-}
-
-/********** loader arrivée **********/
-
-.bloc1 {
-  animation: loader-page-resto 1.5s ease-in-out;
-}
-
-.bloc2 {
-  animation: loader-page-resto 3s ease-in-out;
-}
-
-.bloc3 {
-  animation: loader-page-resto 4.5s ease-in-out;
-}
-
-@keyframes loader-page-resto {
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/********** Header **********/
-
-.logo-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
-  position: relative;
-  @media (min-width: $desktop) {
-    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
-  }
-
-  &-img {
-    height: 36px;
-    width: 200px; 
-  }
-
-  &-back i {
-    color: black;
-    font-size: 20px;
-    position: absolute;
-    left: 20px;
-    top: 25px;
-  }
-}
 
 /********** Main **********/
 .menu {
@@ -220,63 +154,6 @@ width: 100%;
     }
     @media (min-width: $tablet) {
       margin-bottom: 30px;
-    }
-  }
-}
-
-/********** Footer **********/
-
-.footer {
-  padding: 25px;
-  background-color: #353535;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  color: #FFF;
-  @media (min-width: $tablet) {
-    flex-direction: row-reverse;
-    gap: 16px;
-    height: 54px;
-    padding: 30px 25px;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-
-  &-logo {
-    font-size: 18px;
-    font-weight: 400;
-    @media (min-width: $desktop) {
-      width: 139px;
-    }
-  }
-
-  &-liste {
-    list-style-type: none;
-    font-weight: 500;
-    font-size: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
-
-    &-element-text {
-      @media (min-width: $desktop) {
-        width: 130px;
-      }
-    }
-
-    &-element-icone {
-      @media (min-width: $desktop) {
-        width: 188px;
-      }
-    }
-
-    &-element-icone i {
-      width: 25px;
-    }
-
-    @media (min-width: $tablet) {
-      flex-direction: row;
     }
   }
 }

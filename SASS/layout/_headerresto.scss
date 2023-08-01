@@ -1,0 +1,24 @@
+.logo-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    position: relative;
+    @media (min-width: $desktop) {
+      box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+    }
+  
+    &-img {
+      height: 36px;
+      width: 200px; 
+    }
+  
+    &-back i {
+      color: black;
+      font-size: 20px;
+      position: absolute;
+      left: 20px;
+      top: 25px;
+    }
+}
