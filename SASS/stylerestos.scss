@@ -37,11 +37,11 @@ width: 100%;
 @keyframes loader-page-resto {
   from {
     opacity: 0;
-    scale: 0;
+    transform: translateY(100%);
   }
   to {
     opacity: 1;
-    scale: 1;
+    transform: translateY(0);
   }
 }
 
