@@ -37,9 +37,11 @@ width: 100%;
 @keyframes loader-page-resto {
   from {
     opacity: 0;
+    scale: 0;
   }
   to {
     opacity: 1;
+    scale: 1;
   }
 }
 
@@ -50,9 +52,11 @@ width: 100%;
   justify-content: center;
   align-items: center;
   height: 70px;
-  background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
   position: relative;
+  @media (min-width: $desktop) {
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.3);
+  }
 
   &-img {
     height: 36px;
