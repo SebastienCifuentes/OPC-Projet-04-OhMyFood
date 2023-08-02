@@ -35,6 +35,11 @@
         @media (min-width: $desktop) {
           width: 130px;
         }
+
+        & a {
+          text-decoration: none;
+          color: #FFF;
+        }
       }
   
       &-element-icone {

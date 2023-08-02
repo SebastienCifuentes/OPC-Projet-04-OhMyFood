@@ -123,6 +123,10 @@ h1 {
     width: 130px;
   }
 }
+.footer-liste-element-text a {
+  text-decoration: none;
+  color: #FFF;
+}
 @media (min-width: 1080px) {
   .footer-liste-element-icone {
     width: 188px;
