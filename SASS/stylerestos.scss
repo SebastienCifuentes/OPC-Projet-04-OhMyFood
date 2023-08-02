@@ -106,6 +106,9 @@
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    &:hover {
+      cursor: pointer;
+    }
     &:hover &-check {
       margin-right: 0;
     }
