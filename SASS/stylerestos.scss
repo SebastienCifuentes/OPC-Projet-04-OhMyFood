@@ -25,7 +25,7 @@
 }
 
 .menu-choix {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 30px 30px 0 0;
   position: relative;
   top: -60px;
@@ -101,28 +101,51 @@
   }
 
   &-card {
-    padding: 15px;
+    background-color: #fff;
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background-color: #FFF;
+    overflow: hidden;
     border-radius: 15px;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    &:hover &-check {
+      margin-right: 0;
+    }
 
-    &-text {
+    &-all {
+      padding: 15px;
       display: flex;
-      justify-content: space-between;
-
-      & p {
-        font-weight: 300;
-        font-size: 15px;
-      }
-
-      & h3 {
-        font-size: 16px;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+  
+      &-text {
+        display: flex;
+        justify-content: space-between;
+  
+        & p {
+          font-weight: 300;
+          font-size: 15px;
+        }
+  
+        & h3 {
+          font-size: 16px;
+        }
       }
     }
+
+    &-check {
+      background-color: $third-color;
+      margin-right: -60px;
+      width: 60px;
+      border-radius: 0px 15px 15px 0px;
+      transition: all 0.3s ease-in-out;
+      @include display_flex_center
+    }
   }
+}
+
+.menu-choix-main-bloc-card-check i {
+  font-size: 25px;
+  color: white;
 }
 
 .menu-choix-main-btn {
