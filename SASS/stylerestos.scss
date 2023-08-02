@@ -119,14 +119,30 @@
       flex-direction: column;
       gap: 5px;
       width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      & h4 {
+        font-size: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
   
       &-text {
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
   
         & p {
           font-weight: 300;
           font-size: 15px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
         }
   
         & h3 {

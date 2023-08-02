@@ -234,14 +234,29 @@ h1 {
   flex-direction: column;
   gap: 5px;
   width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu-choix-main-bloc-card-all h4 {
+  font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-choix-main-bloc-card-all-text {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-choix-main-bloc-card-all-text p {
   font-weight: 300;
   font-size: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-choix-main-bloc-card-all-text h3 {
   font-size: 16px;
