@@ -168,8 +168,6 @@
 }
 
 .restaurants {
-  display: flex;
-  flex-direction: column;
   padding: 55px 20px 65px 20px;
   background-color: #f6f6f6;
   @media (min-width: $tablet) {
@@ -179,6 +177,10 @@
   &-container {
     display: flex;
     flex-direction: column;
+    @media (min-width: $desktop) {
+      margin: auto;
+      width: 80%;
+    }
 
     & h3 {
       font-size: 24px;
@@ -189,7 +191,7 @@
       padding-top: 20px;
       display: flex;
       flex-direction: column;
-      gap: 20px ;
+      gap: 50px ;
       max-width: $desktop;
 
       &-duo {
