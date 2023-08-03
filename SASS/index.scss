@@ -191,8 +191,11 @@
       padding-top: 20px;
       display: flex;
       flex-direction: column;
-      gap: 50px ;
+      gap: 20px;
       max-width: $desktop;
+      @media (min-width: $tablet) {
+        gap: 50px;
+      }
 
       &-duo {
         display: flex;

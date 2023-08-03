@@ -348,8 +348,13 @@ h1 {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
   max-width: 1080px;
+}
+@media (min-width: 768px) {
+  .restaurants-container-cards {
+    gap: 50px;
+  }
 }
 .restaurants-container-cards-duo {
   display: flex;
