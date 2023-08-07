@@ -193,6 +193,7 @@ h1 {
   gap: 100px;
   width: 100%;
   max-width: 634px;
+  padding-bottom: 40px;
 }
 
 .menu-choix-main-bloc {
